@@ -132,5 +132,5 @@ function loadEnergyChart(data) {
 }
 
 function msToFormattedLabel(ms) {
-    return moment(new Date(ms)).format('D/M/YYYY H:mm');
+    return moment(new Date(ms)).format('M/D/YYYY H:mm');
 }
