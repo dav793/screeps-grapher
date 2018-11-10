@@ -56,11 +56,13 @@ function prepareDatasets() {
         else
             return 0;
     });
+
+    return data;
 }
 
 function loadCharts() {
 
-    prepareDatasets();
+    let data = prepareDatasets();
 
     // let temp = data.map(d => {
     //     let t = Object.assign({}, d);
@@ -69,11 +71,11 @@ function loadCharts() {
     // });
     // console.log(temp);
 
-    loadEnergyChart();
+    loadEnergyChart(data);
 
 }
 
-function loadEnergyChart() {
+function loadEnergyChart(data) {
     let labels = data.map(d => msToFormattedLabel(d.timestamp));
 
     let energyData = data.map(d => d.currentEnergy);
