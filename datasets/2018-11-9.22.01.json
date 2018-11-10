@@ -1,0 +1,170 @@
+[
+    {
+        "timestamp": 1541822441759,
+        "currentEnergy": 800,
+        "currentSecondaryEnergy": 8000,
+        "energyCapacity": 800,
+        "secondaryEnergyCapacity": 8000
+    },
+    {
+        "timestamp": 1541821453275,
+        "currentEnergy": 26,
+        "currentSecondaryEnergy": 8000,
+        "energyCapacity": 800,
+        "secondaryEnergyCapacity": 8000
+    },
+    {
+        "timestamp": 1541820456613,
+        "currentEnergy": 350,
+        "currentSecondaryEnergy": 7900,
+        "energyCapacity": 800,
+        "secondaryEnergyCapacity": 8000
+    },
+    {
+        "timestamp": 1541819433398,
+        "currentEnergy": 800,
+        "currentSecondaryEnergy": 8000,
+        "energyCapacity": 800,
+        "secondaryEnergyCapacity": 8000
+    },
+    {
+        "timestamp": 1541818400896,
+        "currentEnergy": 800,
+        "currentSecondaryEnergy": 8000,
+        "energyCapacity": 800,
+        "secondaryEnergyCapacity": 8000
+    },
+    {
+        "timestamp": 1541817364801,
+        "currentEnergy": 800,
+        "currentSecondaryEnergy": 8000,
+        "energyCapacity": 800,
+        "secondaryEnergyCapacity": 8000
+    },
+    {
+        "timestamp": 1541816344187,
+        "currentEnergy": 800,
+        "currentSecondaryEnergy": 7650,
+        "energyCapacity": 800,
+        "secondaryEnergyCapacity": 8000
+    },
+    {
+        "timestamp": 1541815318104,
+        "currentEnergy": 41,
+        "currentSecondaryEnergy": 6872,
+        "energyCapacity": 800,
+        "secondaryEnergyCapacity": 8000
+    },
+    {
+        "timestamp": 1541814305523,
+        "currentEnergy": 800,
+        "currentSecondaryEnergy": 6172,
+        "energyCapacity": 800,
+        "secondaryEnergyCapacity": 8000
+    },
+    {
+        "timestamp": 1541813291716,
+        "currentEnergy": 800,
+        "currentSecondaryEnergy": 4862,
+        "energyCapacity": 800,
+        "secondaryEnergyCapacity": 8000
+    },
+    {
+        "timestamp": 1541812282588,
+        "currentEnergy": 800,
+        "currentSecondaryEnergy": 4306,
+        "energyCapacity": 800,
+        "secondaryEnergyCapacity": 8000
+    },
+    {
+        "timestamp": 1541811964799,
+        "currentEnergy": 800,
+        "currentSecondaryEnergy": 3256,
+        "energyCapacity": 800,
+        "secondaryEnergyCapacity": 8000
+    },
+    {
+        "timestamp": 1541811959588,
+        "currentEnergy": 800,
+        "currentSecondaryEnergy": 3256,
+        "energyCapacity": 800,
+        "secondaryEnergyCapacity": 8000
+    },
+    {
+        "timestamp": 1541811954404,
+        "currentEnergy": 800,
+        "currentSecondaryEnergy": 3256,
+        "energyCapacity": 800,
+        "secondaryEnergyCapacity": 8000
+    },
+    {
+        "timestamp": 1541811949461,
+        "currentEnergy": 800,
+        "currentSecondaryEnergy": 3256,
+        "energyCapacity": 800,
+        "secondaryEnergyCapacity": 8000
+    },
+    {
+        "timestamp": 1541811944440,
+        "currentEnergy": 800,
+        "currentSecondaryEnergy": 3256,
+        "energyCapacity": 800,
+        "secondaryEnergyCapacity": 8000
+    },
+    {
+        "timestamp": 1541811939159,
+        "currentEnergy": 800,
+        "currentSecondaryEnergy": 3256,
+        "energyCapacity": 800,
+        "secondaryEnergyCapacity": 8000
+    },
+    {
+        "timestamp": 1541811934800,
+        "currentEnergy": 800,
+        "currentSecondaryEnergy": 3256,
+        "energyCapacity": 800,
+        "secondaryEnergyCapacity": 8000
+    },
+    {
+        "timestamp": 1541811929958,
+        "currentEnergy": 800,
+        "currentSecondaryEnergy": 3256,
+        "energyCapacity": 800,
+        "secondaryEnergyCapacity": 8000
+    },
+    {
+        "timestamp": 1541811648001,
+        "currentEnergy": 800,
+        "currentSecondaryEnergy": 3856,
+        "energyCapacity": 800,
+        "secondaryEnergyCapacity": 8000
+    },
+    {
+        "timestamp": 1541811638141,
+        "currentEnergy": 800,
+        "currentSecondaryEnergy": 3856,
+        "energyCapacity": 800,
+        "secondaryEnergyCapacity": 8000
+    },
+    {
+        "timestamp": 1541811628131,
+        "currentEnergy": 800,
+        "currentSecondaryEnergy": 3406,
+        "energyCapacity": 800,
+        "secondaryEnergyCapacity": 8000
+    },
+    {
+        "timestamp": 1541811310875,
+        "currentEnergy": 800,
+        "currentSecondaryEnergy": 2806,
+        "energyCapacity": 800,
+        "secondaryEnergyCapacity": 8000
+    },
+    {
+        "timestamp": 1541811236072,
+        "currentEnergy": 800,
+        "currentSecondaryEnergy": 2956,
+        "energyCapacity": 800,
+        "secondaryEnergyCapacity": 8000
+    }
+]
