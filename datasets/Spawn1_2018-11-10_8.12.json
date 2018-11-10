@@ -1,0 +1,13 @@
+[
+    {
+        "timestamp": 1541859102211,
+        "currentEnergy": 777,
+        "currentSecondaryEnergy": 7429,
+        "energyCapacity": 800,
+        "secondaryEnergyCapacity": 8000,
+        "harvesterCount": 3,
+        "haulerCount": 2,
+        "builderCount": 2,
+        "upgraderCount": 2
+    }
+]

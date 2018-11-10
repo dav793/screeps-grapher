@@ -72,7 +72,69 @@ function loadCharts() {
     // console.log(temp);
 
     loadEnergyChart(data);
+    loadCreepCountChart(data);
 
+}
+
+function loadCreepCountChart(data) {
+    let labels = data.map(d => msToFormattedLabel(d.timestamp));
+
+    let harvesterCount = data.map(d => d.harvesterCount);
+    let haulerCount = data.map(d => d.haulerCount);
+    let upgraderCount = data.map(d => d.upgraderCount);
+    let builderCount = data.map(d => d.builderCount);
+
+    var ctx = document.getElementById("creepCountChart").getContext('2d');
+    new Chart(ctx ,{
+        type:"line",
+        data:{
+            labels: labels,
+            datasets:[
+                {
+                    label: "Harvesters",
+                    data: harvesterCount,
+                    fill: false,
+                    borderColor: getColorRGB('yellow'),
+                    lineTension: 0.1
+                },
+                {
+                    label: "Haulers",
+                    data: haulerCount,
+                    fill: false,
+                    borderColor: getColorRGB('green'),
+                    lineTension: 0.1
+                },
+                {
+                    label: "Upgraders",
+                    data: upgraderCount,
+                    fill: false,
+                    borderColor: getColorRGB('blue'),
+                    lineTension: 0.1
+                },
+                {
+                    label: "Builders",
+                    data: builderCount,
+                    fill: false,
+                    borderColor: getColorRGB('purple'),
+                    lineTension: 0.1
+                }
+            ]
+        },
+        options:{
+            responsive:true,
+            maintainAspectRatio: false,
+            scales: {
+                xAxes: [{
+                    type: 'time'
+                }],
+                yAxes : [{
+                    ticks : {
+                        beginAtZero : true
+                    }
+                }]
+            }
+        }
+    });
 }
 
 function loadEnergyChart(data) {
@@ -93,28 +155,28 @@ function loadEnergyChart(data) {
                     label: "Energy",
                     data: energyData,
                     fill: false,
-                    borderColor: "rgb(75, 192, 192)",
+                    borderColor: getColorRGB('red'),
                     lineTension: 0.1
                 },
                 {
                     label: "Secondary Energy",
                     data: secondaryEnergyData,
                     fill: false,
-                    borderColor: "rgb(244, 212, 66)",
+                    borderColor: getColorRGB('yellow'),
                     lineTension: 0.1
                 },
                 {
                     label: "Energy Capacity",
                     data: energyCapacityData,
                     fill: false,
-                    borderColor: "rgb(38, 104, 104)",
+                    borderColor: getColorRGB('darkRed'),
                     lineTension: 0.1
                 },
                 {
                     label: "Secondary Energy Capacity",
                     data: secondaryEnergyCapacityData,
                     fill: false,
-                    borderColor: "rgb(135, 117, 36)",
+                    borderColor: getColorRGB('darkYellow'),
                     lineTension: 0.1
                 }
             ]
@@ -125,6 +187,11 @@ function loadEnergyChart(data) {
             scales: {
                 xAxes: [{
                     type: 'time'
+                }],
+                yAxes : [{
+                    ticks : {
+                        beginAtZero : true
+                    }
                 }]
             }
         }
@@ -133,4 +200,32 @@ function loadEnergyChart(data) {
 
 function msToFormattedLabel(ms) {
     return moment(new Date(ms)).format('M/D/YYYY H:mm');
+}
+
+function getColorRGB(colorName) {
+    let colors = {
+        blue: 'rgb(66, 75, 201)',
+        darkBlue: 'rgb(42, 47, 124)',
+        lightBlue: 'rgb(138, 145, 242)',
+        cyan: 'rgb(75, 192, 192)',
+        darkCyan: 'rgb(38, 104, 104)',
+        lightCyan: 'rgb(157, 234, 234)',
+        purple: 'rgb(212, 66, 244)',
+        darkPurple: 'rgb(133, 40, 155)',
+        lightPurple: 'rgb(239, 170, 255)',
+        green: 'rgb(74, 244, 65)',
+        darkGreen: 'rgb(42, 135, 37)',
+        lightGreen: 'rgb(143, 255, 137)',
+        yellow: 'rgb(244, 212, 66)',
+        darkYellow: 'rgb(135, 117, 36)',
+        lightYellow: 'rgb(255, 233, 137)',
+        orange: 'rgb(244, 148, 65)',
+        darkOrange: 'rgb(155, 89, 32)',
+        lightOrange: 'rgb(255, 201, 155)',
+        red: 'rgb(244, 65, 65)',
+        darkRed: 'rgb(168, 45, 45)',
+        lightRed: 'rgb(255, 150, 150)'
+    };
+
+    return colors[colorName];
 }
